@@ -6,6 +6,19 @@ div {
 	padding: 10px;
 }
 
+#mc_embed_signup {
+	top: -10px;
+}
+
+#mc_embed_signup div {
+	padding: 5px;
+
+}
+
+.mc-field-group {
+	top: -10px;
+}
+
 .title {
 	font-family: 'Montserrat', serif;
 	font-size: 1.9em;
