@@ -1,0 +1,25 @@
+body {
+	font-family: Arial;
+}
+
+div {
+	padding: 10px;
+}
+
+.title {
+	font-family: 'Montserrat', serif;
+	font-size: 1.9em;
+}
+
+.big_title {
+	color: #35a5d5;
+	/*font-style: italic;*/
+	font-weight: bold;
+	font-size: 2em;
+}
+
+@media (max-width: 992px) {
+	.title {
+		font-size: 1.5em;
+	}
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="shortcut icon" href="{% static '/images/favicon.ico' %}">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+	<style>
+	body { 
+  background: url("{% static '/images/bg_logo.png' %}") no-repeat center center fixed; 
+  opacity: 10%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{% static '/images/logo.png' %}', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{% static '/images/logo.png' %}', sizingMethod='scale')";
+}
+</style>
+
+	{% block header %}
+	<title>{% block title %}Default{% endblock %}</title>
+	{% endblock header %}
+
+</head>
+<body>
+	{% block content %}
+	Main content
+	{% endblock content %}
+
+	{% block scripts %}
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="{% static '/js/main.js' %}"></script>
+	{% endblock scripts%}
+</body>
+</html>
