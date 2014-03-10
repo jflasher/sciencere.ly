@@ -6,13 +6,18 @@ div {
 	padding: 10px;
 }
 
-#mc_embed_signup {
-	top: -10px;
+#mc_embed_signup div {
+	padding: 2px;
 }
 
-#mc_embed_signup div {
-	padding: 5px;
+.email_text {
+	font-weight: normal;
+	font-size: 1.2em;
+}
 
+.main_text {
+	font-weight: normal;
+	font-size: 1.2em;
 }
 
 .mc-field-group {
