@@ -1,0 +1,10 @@
+{% if user %}
+    <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+    <div>
+        <p>{{ user.institution }}</p>
+        <p><a href="mailto:{{ user.email }}">Mail Me!</a></p>
+        <p><a href="{{ user.url }}">{{ user.url }}</a></p>
+    </div>
+{% else %}
+    <p>No users here!</p>
+{% endif %}

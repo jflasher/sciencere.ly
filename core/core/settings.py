@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'account',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,6 +52,8 @@ ROOT_URLCONF = 'core.urls'
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
+# The user profile
+AUTH_USER_MODEL = "account.UserProfile"
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
