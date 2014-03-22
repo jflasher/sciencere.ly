@@ -1,0 +1,10 @@
+<html>
+<body>
+    <h1>{{ self.title }}</h1>
+        Intro: {{ self.intro }}
+        <hr />
+        {% for rl in self.related_links.all %}
+            <p>{{ rl.title }}: <a href='{{ rl.link_page.url }}'>{{ rl.link_page }}</a></p>
+        {% endfor %}
+    </body>
+</html>

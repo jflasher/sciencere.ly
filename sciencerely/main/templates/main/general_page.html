@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% load rich_text %}
+
+{% block content %}
+    {{ self.body | richtext }}
+{% endblock content %}
